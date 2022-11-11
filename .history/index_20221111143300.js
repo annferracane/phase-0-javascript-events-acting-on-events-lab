@@ -13,6 +13,7 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
     const leftNumbers = dodger.style.left.replace("px", "");
     const left = parseInt(leftNumbers, 10);
+    console.log(left);
     if (left < 360) {
       dodger.style.left = `${left + 1}px`;
     }
